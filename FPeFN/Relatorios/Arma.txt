@@ -1,0 +1,21 @@
+arma1.png 
+Total de Pixels:  4806 
+_______________________| Total | % 
+Falsos Positivos:      |   2   | 0.041615 
+Falsos Negativos:      |   1   | 0.020807 
+
+
+arma2.png 
+Total de Pixels:  4806 
+_______________________| Total | % 
+Falsos Positivos:      |   2   | 0.041615 
+Falsos Negativos:      |   1   | 0.020807 
+
+
+SOMATÓRIO DE TODAS AS IMAGENS 
+Total de Pixels:  9612 
+_______________________| Total | % 
+Falsos Positivos:      |   4   | 0.041615 
+Falsos Negativos:      |   2   | 0.020807 
+
+

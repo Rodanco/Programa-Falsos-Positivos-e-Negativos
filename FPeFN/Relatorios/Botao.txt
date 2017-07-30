@@ -1,0 +1,21 @@
+Bnão.png 
+Total de Pixels:  10000 
+_______________________| Total | % 
+Falsos Positivos:      |   216   | 2.160000 
+Falsos Negativos:      |   55   | 0.550000 
+
+
+Bsim.png 
+Total de Pixels:  10000 
+_______________________| Total | % 
+Falsos Positivos:      |   104   | 1.040000 
+Falsos Negativos:      |   75   | 0.750000 
+
+
+SOMATÓRIO DE TODAS AS IMAGENS 
+Total de Pixels:  20000 
+_______________________| Total | % 
+Falsos Positivos:      |   320   | 1.600000 
+Falsos Negativos:      |   130   | 0.650000 
+
+
