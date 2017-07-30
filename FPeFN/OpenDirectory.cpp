@@ -10,7 +10,7 @@ OpenDirectory::OpenDirectory()
 OpenDirectory::~OpenDirectory()
 {
 }
-
+//...
 bool OpenDirectory::SelecionarPasta(short tipo, std::string diretorioBase)
 {
 	char filename[MAX_PATH];
