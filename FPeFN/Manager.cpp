@@ -37,6 +37,18 @@ Manager::Manager()
 
 Manager::~Manager()
 {
+	if (!imgGabarito.empty())
+	{
+		for (short i = 0; i < imgGabarito.size(); i++)
+			delete imgGabarito[i];
+		imgGabarito.clear();
+	}
+	if (!imgSegmentadas.empty())
+	{
+		for (short i = 0; i < imgSegmentadas.size(); i++)
+			delete imgSegmentadas[i];
+		imgSegmentadas.clear();
+	}
 	delete txtDiretorioSegmentadas;
 	delete txtDiretorioGabarito;
 	delete relatorioFinal;
@@ -69,7 +81,7 @@ void Manager::Inputs()
 		switch (e.type)
 		{
 		case sf::Event::Closed:
-			exit(0);
+			quit = true;
 			break;
 		case sf::Event::KeyPressed:
 			InputTeclado();
@@ -199,7 +211,11 @@ void Manager::MouseClicado(sf::Event& e)
 				if (open->SelecionarPasta(1, diretorioExe))
 				{
 					if (!imgGabarito.empty())
+					{
+						for (short i = 0; i < imgGabarito.size(); i++)
+							delete imgGabarito[i];
 						imgGabarito.clear();
+					}
 					dir = opendir(open->GetDiretorioDaPasta().c_str());
 					txtDiretorioGabarito->setString(open->GetDiretorioDaPasta());
 					nomeArquivos.clear();
@@ -223,7 +239,11 @@ void Manager::MouseClicado(sf::Event& e)
 				if (open->SelecionarPasta(2, diretorioExe))
 				{
 					if (!imgSegmentadas.empty())
+					{
+						for (short i = 0; i < imgSegmentadas.size(); i++)
+							delete imgSegmentadas[i];
 						imgSegmentadas.clear();
+					}
 					dir = opendir(open->GetDiretorioDaPasta().c_str());
 					txtDiretorioSegmentadas->setString(open->GetDiretorioDaPasta());
 					nomeArquivos.clear();
